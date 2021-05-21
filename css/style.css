@@ -26,6 +26,16 @@ ul {
   align-items: center;
 }
 
+#sub-header-1 ul li a {
+  padding: 5px 10px;
+  border: 2px solid #fff;
+}
+
+#sub-header-1 ul li a:hover {
+  border: 2px solid #bf363c;
+  border-radius: 4px;
+}
+
 #sub-header-1 ul {
   display: flex;
   gap: 10px;
@@ -42,14 +52,51 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-image: url(../img/space.jpeg);
+  /* background-image: url(../img/space.jpeg); */
   color: #fff;
   font-size: 2rem;
   height: 400px;
   text-align: center;
-  background-color: #d53c44;
+  background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+}
+
+#hero {
+  background: #17467e;
+  background-image: url("../img/space.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  position: relative;
+  color: #fff;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#hero video {
+  width: 100%;
+  position: absolute;
+  top: -20%;
+}
+
+#hero .layout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  flex: 1;
+  width: 100%;
 }
 
 #hero button {
@@ -60,8 +107,62 @@ ul {
   cursor: pointer;
   font-size: 1.5rem;
   color: white;
+  border: 2px solid transparent;
 }
 #hero button:hover {
   background-color: #fff;
   color: #000;
+  border: 2px solid #000;
+}
+
+.dropdown-one {
+  display: none;
+}
+
+#services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 40px auto;
+  width: 960px;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+#services article {
+  overflow: hidden;
+}
+
+#services h1,
+footer {
+  grid-column: span 3;
+}
+
+#services article figure {
+  height: 200px;
+}
+
+#services h1 {
+  text-align: center;
+}
+
+#services article h3 {
+  margin-bottom: 15px;
+}
+
+#services footer {
+  text-align: right;
+}
+
+#services footer a {
+  padding: 10px 20px;
+  background-color: #d53c44;
+  border: 2px solid transparent;
+  color: #000;
+  border-radius: 10px;
+}
+
+#services footer a:hover {
+  background-color: #fff;
+  border: 2px solid #d53c44;
 }
