@@ -5,40 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.style.css">
     <title>Boostrap Layout</title>
   </head>
   <body>
     <body>
-        <header>
-          <section id="sub-header-1">
-            <figure>
-              <a href=""><img src="img/byte2.png" alt="" /></a>
-            </figure>
-            <nav>
-              <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <div class="dropdown">
-                  <li><a href="">Contact</a></li>
-                  <div class="dropdown-one">
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Contact</a></li>
-                  </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <figure  class="navbar-brand-container">
+                  <a class="navbar-brand" href=""><img src="media/img/byte2.png" alt="" /></a>
+                </figure>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="">Facebook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Twitter</a></li>
+                    </ul>
                 </div>
-              </ul>
-            </nav>
-            <nav>
-              <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Twitter</a></li>
-              </ul>
-            </nav>
-          </section>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            </div>
+        </nav>
+        <header>
           <section id="hero">
             <div class="layout">
               <video autoplay>
-                <source src="media/video/Space-hero-video.mp4" />
+                <source src="media/video/Space-hero-video.mp4" type="video/mp4"/>
               </video>
             </div>
             <h1>Welcome to Mars</h1>
@@ -48,7 +45,7 @@
         <main id="services">
           <h1>Our Services</h1>
           <article>
-            <figure><img src="img/falcony9.jpeg" alt="falcon9 photo" /></figure>
+            <figure><img src="media/img/falcony9.jpeg" alt="falcon9 photo" /></figure>
             <h3>Falcon</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
@@ -58,7 +55,7 @@
             </p>
           </article>
           <article>
-            <figure><img src="img/heavy.jpeg" alt="falcon heavy photo" /></figure>
+            <figure><img src="/media/img/heavy.jpeg" alt="falcon heavy photo" /></figure>
             <h3>Falcon Heavy</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
@@ -70,7 +67,7 @@
             </p>
           </article>
           <article>
-            <figure><img src="img/dragon.jpeg" alt="dragon photo" /></figure>
+            <figure><img src="media/img/dragon.jpeg" alt="dragon photo" /></figure>
             <h3>Dragon</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolorem
