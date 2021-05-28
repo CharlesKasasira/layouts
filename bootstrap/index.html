@@ -31,15 +31,14 @@
                   </button>
             </div>
         </nav>
-        <header>
-          <section id="hero">
-            <div class="layout">
-              <video autoplay>
-                <source src="media/video/Space-hero-video.mp4" type="video/mp4"/>
-              </video>
-            </div>
+        <header id="hero" class="position-relative d-flex flex-column">
+          <video class="position-absolute" autoplay loop>
+            <source src="media/video/Space-hero-video.mp4" type="video/mp4"/>
+          </video>
+
+          <section id="layer">
             <h1>Welcome to Mars</h1>
-            <button>Buy now</button>
+            <button class="btn btn-danger">Buy now</button>
           </section>
         </header>
         <main id="services">

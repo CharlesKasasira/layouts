@@ -1,3 +1,18 @@
 .nav-brand-container {
   margin: 0;
 }
+
+#hero {
+  height: 500px;
+  overflow: hidden;
+}
+
+header > video {
+  z-index: 100;
+}
+
+#layer {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 101;
+  height: 500px;
+}
